@@ -15,12 +15,15 @@ Luckily, with gtk3-nocsd, we still have a way to (partially) turn it off.
 ## Usage
 
 1. build the code with the script. (you need pkg-config and gtk+3-dev packages)
-  > ./build.sh
+
+  $ ./build.sh
+
 After this you'll have a "gtk3-nocsd.so" file.
 
 2. export some environment variables in your .profile or .bashrc.
-  > export GTK_CSD=0
-  > export LD_PRELOAD=<"full path" of your gtk3-nocsd.so file>
+
+  export GTK_CSD=0
+  export LD_PRELOAD=<"full path" of your gtk3-nocsd.so file>
 
 3. Re-login to make the environment variables take effect.
 
